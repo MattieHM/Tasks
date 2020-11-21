@@ -4,8 +4,28 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1vw;
 }
-.grid > div {
+.grid > div:first-child {
+    background: #800000 ;
+}
+.grid > div:last-child{
+    background: #787878 ;
+}
+.grid > div:nth-child(even){
+    background: #ff3d3d
+}
+.grid > div{
     padding: 1vw;
-    background: cyan;
     text-align: center;
+}
+.grid__elem3:hover{
+    background: green;
+}
+.grid__elem5:hover{
+    outline: solid gold;
+}
+.grid__elem7:hover{
+    color:red;
+}
+.grid > div:last-child:hover{
+    font-size: 30px;
 }
