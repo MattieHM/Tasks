@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    grid-auto-rows: 1fr;
+}
+.grid > div:nth-child(odd) {
+    padding: 1vw;
+    background: #787878;
+    text-align: center;
+}
+.grid > div:nth-child(even) {
+    padding: 1vw;
+    background: #800000;
+    text-align: center;
+}
